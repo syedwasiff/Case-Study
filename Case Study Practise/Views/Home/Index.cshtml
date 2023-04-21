@@ -1,0 +1,48 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="container-fluid">
+    <div style="margin-top:2rem">
+        <div class="form-group row">
+            <input type="hidden" id="hdnId" value="0" />
+            <div class="col-md-6">
+                <label for="txtProductTitle">Product Title</label>
+                <input type="text" class="form-control" id="txtProductTitle" placeholder="Enter Product Title">
+            </div>
+            <div class="col-md-6">
+                <label for="txtPrice">Price</label>
+                <input type="number" class="form-control" id="txtPrice" placeholder="Price">
+            </div>
+            <div class="col-md-6">
+                <label for="txtStock">Stock</label>
+                <input type="number" class="form-control" id="txtStock" placeholder="Stock">
+            </div>
+            <div class="col-md-6">
+                <label for="exampleInputPassword1">Image</label>
+                <input type="file" class="form-control" id="txtImage" placeholder="Choose Image">
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary" onclick="AddProducts()">Submit</button>
+    </div>
+
+
+    <div>
+        <table class="table table-hover" id="tbl_Products">
+            <thead>
+                <tr>
+                    <th scope="col">Product Title</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Stock</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+
